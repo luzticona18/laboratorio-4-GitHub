@@ -7,19 +7,19 @@ public class primo {
         int numero = scanner.nextInt();
         
         if (esPrimo(numero)) {
-            System.out.println(numero + " es primo.");
+            System.out.println(numero + " es un numero primo.");
         } else {
-            System.out.println(numero + " no es primo.");
+            System.out.println(numero + " no es un numero primo.");
         }
         scanner.close();
     }
 
     public static boolean esPrimo(int n) {
         if (n <= 1) return false;
-        // Se optimiza comprobando solo hasta la raíz cuadrada del número [11]
+     
         for (int i = 2; i <= Math.sqrt(n); i++) {
-            if (n % i == 0) return false; // Divisor encontrado, no es primo
+            if (n % i == 0) return false; 
         }
-        return true; // No se encontraron divisores
+        return true; 
     }
 }
