@@ -19,6 +19,9 @@ public class primo {
                 }
             }
 
+
+
+
             if (esPrimo) {
                 System.out.println("El número ES primo");
             } else {
