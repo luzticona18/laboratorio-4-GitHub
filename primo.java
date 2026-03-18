@@ -2,6 +2,7 @@ import java.util.Scanner;
 
 public class primo {
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
         System.out.print("Introduce un número: ");
         int numero = scanner.nextInt();
@@ -21,5 +22,6 @@ public class primo {
             if (n % i == 0) return false; 
         }
         return true; 
+
     }
 }
